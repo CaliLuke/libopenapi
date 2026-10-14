@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"strings"
 
-	highoverlay "github.com/pb33f/libopenapi/datamodel/high/overlay"
+	highoverlay "github.com/CaliLuke/libopenapi/datamodel/high/overlay"
 )
 
 func resolveAction(overlay *highoverlay.Overlay, action *highoverlay.Action) (*highoverlay.Action, error) {

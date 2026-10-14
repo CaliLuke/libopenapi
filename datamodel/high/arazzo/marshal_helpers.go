@@ -5,7 +5,7 @@ package arazzo
 
 import (
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // marshalExtensions appends extension key-value pairs from ext into the ordered map m.

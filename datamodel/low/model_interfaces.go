@@ -5,7 +5,7 @@ package low
 
 import (
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 type SharedParameters interface {

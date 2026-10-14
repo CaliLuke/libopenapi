@@ -5,9 +5,9 @@ package sdk
 
 import (
 	"github.com/pb33f/go-yaml"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	highv3 "github.com/pb33f/libopenapi/datamodel/high/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	highv3 "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // Contract is a borrowed effective view over one OpenAPI document. It retains

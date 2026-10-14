@@ -5,7 +5,7 @@ package v2
 
 import (
 	"github.com/pb33f/go-yaml"
-	low "github.com/pb33f/libopenapi/datamodel/low/v2"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/v2"
 )
 
 // Items is a high-level representation of a Swagger / OpenAPI 2 Items object, backed by a low level one.

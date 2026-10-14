@@ -8,12 +8,12 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	libopenapi "github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/arazzo/expression"
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
-	lowmodel "github.com/pb33f/libopenapi/datamodel/low"
-	low "github.com/pb33f/libopenapi/datamodel/low/arazzo"
-	"github.com/pb33f/libopenapi/orderedmap"
+	libopenapi "github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/arazzo/expression"
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
+	lowmodel "github.com/CaliLuke/libopenapi/datamodel/low"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/arazzo"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

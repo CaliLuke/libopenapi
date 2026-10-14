@@ -18,14 +18,14 @@ import (
 	"text/template"
 
 	"github.com/pb33f/go-yaml"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	highv3 "github.com/pb33f/libopenapi/datamodel/high/v3"
-	lowbase "github.com/pb33f/libopenapi/datamodel/low/base"
-	modelgen "github.com/pb33f/libopenapi/generator/golang"
-	"github.com/pb33f/libopenapi/generator/internal/gocomment"
-	"github.com/pb33f/libopenapi/generator/sdk"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	highv3 "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	lowbase "github.com/CaliLuke/libopenapi/datamodel/low/base"
+	modelgen "github.com/CaliLuke/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi/generator/internal/gocomment"
+	"github.com/CaliLuke/libopenapi/generator/sdk"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 //go:embed templates/client.tmpl

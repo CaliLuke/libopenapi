@@ -11,11 +11,11 @@ import (
 	"text/template"
 
 	"github.com/pb33f/go-yaml"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	highv3 "github.com/pb33f/libopenapi/datamodel/high/v3"
-	modelgen "github.com/pb33f/libopenapi/generator/golang"
-	"github.com/pb33f/libopenapi/generator/sdk"
-	"github.com/pb33f/libopenapi/orderedmap"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	highv3 "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	modelgen "github.com/CaliLuke/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi/generator/sdk"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 func TestGenerateContractRejectsInvalidTopLevelInputs(t *testing.T) {

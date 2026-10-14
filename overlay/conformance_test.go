@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	highoverlay "github.com/pb33f/libopenapi/datamodel/high/overlay"
-	"github.com/pb33f/libopenapi/orderedmap"
+	highoverlay "github.com/CaliLuke/libopenapi/datamodel/high/overlay"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

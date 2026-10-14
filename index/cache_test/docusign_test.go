@@ -6,12 +6,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
+	"github.com/CaliLuke/libopenapi"
 
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	v3 "github.com/pb33f/libopenapi/datamodel/high/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/testify/require"
 )
 

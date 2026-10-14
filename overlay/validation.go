@@ -8,7 +8,7 @@ import (
 	"regexp"
 
 	"github.com/pb33f/go-yaml"
-	highoverlay "github.com/pb33f/libopenapi/datamodel/high/overlay"
+	highoverlay "github.com/CaliLuke/libopenapi/datamodel/high/overlay"
 )
 
 var overlayVersion = regexp.MustCompile(`^1\.[0-9]+(\.[0-9]+)?$`)

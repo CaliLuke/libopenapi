@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/generator/golang"
 )
 
 const edgesSpec = `openapi: 3.1.0

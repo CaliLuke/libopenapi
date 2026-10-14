@@ -5,10 +5,10 @@ package v2
 
 import (
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	low "github.com/pb33f/libopenapi/datamodel/low/v2"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/v2"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // Parameter represents a high-level Swagger / OpenAPI 2 Parameter object, backed by a low-level one.

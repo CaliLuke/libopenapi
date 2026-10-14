@@ -15,8 +15,8 @@ import (
 	"unicode/utf8"
 
 	"github.com/lucasjones/reggen"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 const (

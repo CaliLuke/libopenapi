@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/generator/golang"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 const shapesSpec = `openapi: 3.0.3

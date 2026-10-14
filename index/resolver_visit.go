@@ -8,7 +8,7 @@ import (
 	"sort"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 func visitIndexWithoutDamagingIt(res *Resolver, idx *SpecIndex) {

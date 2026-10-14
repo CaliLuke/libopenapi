@@ -4,8 +4,8 @@
 package model
 
 import (
-	"github.com/pb33f/libopenapi/datamodel/low"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
 )
 
 // OAuthFlowsChanges represents changes found between two OpenAPI OAuthFlows objects.

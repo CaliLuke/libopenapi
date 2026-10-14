@@ -6,7 +6,7 @@ package arazzo
 import (
 	"testing"
 
-	"github.com/pb33f/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
 	"github.com/pb33f/testify/assert"
 )
 

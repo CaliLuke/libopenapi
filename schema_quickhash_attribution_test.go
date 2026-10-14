@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/pb33f/libopenapi/datamodel"
-	lowbase "github.com/pb33f/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	lowbase "github.com/CaliLuke/libopenapi/datamodel/low/base"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

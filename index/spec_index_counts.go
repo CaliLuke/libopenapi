@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 // GetPathCount returns the number of paths defined in the specification. Returns -1 if root is nil.

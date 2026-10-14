@@ -13,7 +13,7 @@ import (
 
 	"github.com/pb33f/go-yaml"
 	"github.com/pb33f/jsonpath/pkg/jsonpath"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 )
 

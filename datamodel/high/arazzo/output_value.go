@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/pb33f/go-yaml"
-	low "github.com/pb33f/libopenapi/datamodel/low/arazzo"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/arazzo"
 )
 
 type outputValueVariant uint8

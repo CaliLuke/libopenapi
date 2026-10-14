@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/pb33f/libopenapi"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
 )
 
 type SchemaProvider interface {

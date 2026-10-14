@@ -12,18 +12,18 @@ import (
 	"strings"
 	"testing"
 
-	v2high "github.com/pb33f/libopenapi/datamodel/high/v2"
-	what_changed "github.com/pb33f/libopenapi/what-changed"
+	v2high "github.com/CaliLuke/libopenapi/datamodel/high/v2"
+	what_changed "github.com/CaliLuke/libopenapi/what-changed"
 
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 
-	"github.com/pb33f/libopenapi/datamodel/high"
-	v3high "github.com/pb33f/libopenapi/datamodel/high/v3"
-	low "github.com/pb33f/libopenapi/datamodel/low/base"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	v3high "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/base"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 )
 

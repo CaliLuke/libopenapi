@@ -18,13 +18,13 @@ import (
 	"time"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	v2 "github.com/pb33f/libopenapi/datamodel/high/v2"
-	lowv2 "github.com/pb33f/libopenapi/datamodel/low/v2"
-	lowv3 "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	v2 "github.com/CaliLuke/libopenapi/datamodel/high/v2"
+	lowv2 "github.com/CaliLuke/libopenapi/datamodel/low/v2"
+	lowv3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 )
 

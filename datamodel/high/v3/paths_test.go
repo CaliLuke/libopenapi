@@ -9,9 +9,9 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	v3low "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	v3low "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/index"
 	"github.com/pb33f/testify/assert"
 )
 

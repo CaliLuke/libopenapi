@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
+	"github.com/CaliLuke/libopenapi"
 )
 
 func TestRenderSchemasPreservesReferenceOnlyComponentName(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"sync"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // globalHashSeed ensures consistent hashes across all pooled instances.

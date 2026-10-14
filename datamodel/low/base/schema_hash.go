@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // Hash will generate a stable hash of the SchemaDynamicValue

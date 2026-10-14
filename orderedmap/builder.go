@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high/nodes"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/datamodel/high/nodes"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 type marshaler interface {

@@ -10,7 +10,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // YAMLNodeToJSON converts yaml/json stored in a yaml.Node to json ordered matching the original yaml/json

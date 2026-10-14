@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
-	v3high "github.com/pb33f/libopenapi/datamodel/high/v3"
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
+	v3high "github.com/CaliLuke/libopenapi/datamodel/high/v3"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

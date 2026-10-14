@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 // PropertyMergeStrategy defines how conflicting properties are handled during reference resolution

@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pb33f/libopenapi/arazzo/expression"
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/arazzo/expression"
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // actionTypeRequest groups the parameters for processActionTypeResult,

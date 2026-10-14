@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 // ResolvingError represents an issue the resolver had trying to stitch the tree together.

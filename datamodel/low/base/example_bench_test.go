@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
 )
 
 func benchmarkExampleRootNode(b *testing.B) *yaml.Node {

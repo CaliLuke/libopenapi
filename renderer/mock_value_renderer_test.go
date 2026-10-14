@@ -6,7 +6,7 @@ package renderer
 import (
 	"testing"
 
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
 	"github.com/pb33f/testify/assert"
 )
 

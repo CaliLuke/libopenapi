@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
 )
 
 func stringSet(names ...string) map[string]struct{} {

@@ -12,12 +12,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	highv3 "github.com/pb33f/libopenapi/datamodel/high/v3"
-	modelgen "github.com/pb33f/libopenapi/generator/golang"
-	"github.com/pb33f/libopenapi/generator/sdk"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	highv3 "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	modelgen "github.com/CaliLuke/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi/generator/sdk"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 func TestGeneratedSDKExecutesResourceOperations(t *testing.T) {

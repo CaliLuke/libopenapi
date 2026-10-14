@@ -7,9 +7,9 @@ import (
 	"context"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	lowarazzo "github.com/pb33f/libopenapi/datamodel/low/arazzo"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	lowarazzo "github.com/CaliLuke/libopenapi/datamodel/low/arazzo"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // buildSlice converts a slice of low.ValueReference[L] to a slice of H using a conversion function.

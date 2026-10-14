@@ -6,7 +6,7 @@ package golang
 import (
 	"reflect"
 
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
 )
 
 // Option configures a Generator.

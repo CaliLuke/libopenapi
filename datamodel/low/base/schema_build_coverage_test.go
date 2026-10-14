@@ -12,8 +12,8 @@ import (
 	"unsafe"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -22,7 +22,7 @@ type collectingAddNodes struct {
 	lines []int
 }
 
-//go:linkname lowBuildModelFieldCache github.com/pb33f/libopenapi/datamodel/low.buildModelFieldCache
+//go:linkname lowBuildModelFieldCache github.com/CaliLuke/libopenapi/datamodel/low.buildModelFieldCache
 var lowBuildModelFieldCache sync.Map
 
 func (c *collectingAddNodes) AddNode(key int, _ *yaml.Node) {

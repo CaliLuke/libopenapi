@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi"
-	higharazzo "github.com/pb33f/libopenapi/datamodel/high/arazzo"
+	"github.com/CaliLuke/libopenapi"
+	higharazzo "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
 )
 
 func TestPrepareArazzoFiniteOperation(t *testing.T) {

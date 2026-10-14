@@ -6,8 +6,8 @@ package arazzo
 import (
 	"testing"
 
-	"github.com/pb33f/libopenapi/arazzo/expression"
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
+	"github.com/CaliLuke/libopenapi/arazzo/expression"
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

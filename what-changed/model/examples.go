@@ -5,8 +5,8 @@ package model
 
 import (
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	v2 "github.com/pb33f/libopenapi/datamodel/low/v2"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	v2 "github.com/CaliLuke/libopenapi/datamodel/low/v2"
 )
 
 // ExamplesChanges represents changes made between Swagger Examples objects (Not OpenAPI 3).

@@ -13,8 +13,8 @@ import (
 	"testing"
 
 	"github.com/pb33f/jsonpath/pkg/jsonpath"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/utils"
 
 	"context"
 	"github.com/pb33f/go-yaml"

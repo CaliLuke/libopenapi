@@ -7,7 +7,7 @@ import (
 	"fmt"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 func cloneFoundComponentReference(index *SpecIndex, found *Reference, componentID, absoluteFilePath string) *Reference {

@@ -8,9 +8,9 @@ import (
 	"github.com/pb33f/go-yaml"
 	"github.com/pb33f/jsonpath/pkg/jsonpath"
 	"github.com/pb33f/jsonpath/pkg/jsonpath/config"
-	highoverlay "github.com/pb33f/libopenapi/datamodel/high/overlay"
-	"github.com/pb33f/libopenapi/internal/jsonnode"
-	"github.com/pb33f/libopenapi/utils"
+	highoverlay "github.com/CaliLuke/libopenapi/datamodel/high/overlay"
+	"github.com/CaliLuke/libopenapi/internal/jsonnode"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 // Apply applies the given overlay to the target document bytes.

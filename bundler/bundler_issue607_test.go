@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel"
 	"github.com/pb33f/testify/require"
 )
 

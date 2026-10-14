@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	libopenapi "github.com/pb33f/libopenapi"
+	libopenapi "github.com/CaliLuke/libopenapi"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

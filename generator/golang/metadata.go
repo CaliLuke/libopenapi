@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/pb33f/go-yaml"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
 )
 
 type openAPIMetadata struct {

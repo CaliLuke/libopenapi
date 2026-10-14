@@ -12,7 +12,7 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/index"
 )
 
 // Tests for defensive nil checks and edge cases in extension_refs.go

@@ -12,7 +12,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 	"golang.org/x/sync/singleflight"
 )
 

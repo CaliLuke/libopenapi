@@ -6,8 +6,8 @@ package arazzo_test
 import (
 	"fmt"
 
-	arazzo "github.com/pb33f/libopenapi/datamodel/high/arazzo"
-	"github.com/pb33f/libopenapi/orderedmap"
+	arazzo "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 func ExampleOutputValue() {

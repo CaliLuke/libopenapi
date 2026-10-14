@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 func (index *SpecIndex) lookupRolodex(ctx context.Context, uri []string) *Reference {

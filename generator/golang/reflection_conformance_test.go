@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
 )
 
 type ReflectConformanceID string

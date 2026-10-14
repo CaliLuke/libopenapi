@@ -11,9 +11,9 @@ import (
 	"strings"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/arazzo/expression"
-	higharazzo "github.com/pb33f/libopenapi/datamodel/high/arazzo"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/arazzo/expression"
+	higharazzo "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
 )
 
 // PrepareArazzo selects finite Arazzo workflows and binds their operationIds to

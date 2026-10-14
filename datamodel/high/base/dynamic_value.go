@@ -7,7 +7,7 @@ import (
 	"reflect"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
+	"github.com/CaliLuke/libopenapi/datamodel/high"
 )
 
 // DynamicValue is used to hold multiple possible types for a schema property. There are two values, a left

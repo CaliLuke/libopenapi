@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
+	"github.com/CaliLuke/libopenapi"
 )
 
 func TestTrainTravelGoldenDefaultRawUnion(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pb33f/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
 )
 
 func (wr *SchemaRenderer) renderMockStringValue(schema *base.Schema, key string, maxGeneratedStringBytes int) any {

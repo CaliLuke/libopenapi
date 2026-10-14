@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/pb33f/go-yaml"
-	highoverlay "github.com/pb33f/libopenapi/datamodel/high/overlay"
+	highoverlay "github.com/CaliLuke/libopenapi/datamodel/high/overlay"
 	"github.com/pb33f/testify/assert"
 )
 

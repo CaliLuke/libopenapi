@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/orderedmap"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 func TestAPIPolishSchemaSetRootsAndOptionVariants(t *testing.T) {

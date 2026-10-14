@@ -12,10 +12,10 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel"
 )
 
 // Reference is a wrapper around *yaml.Node that tracks a single $ref usage in a specification.
