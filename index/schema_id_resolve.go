@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/pb33f/go-yaml"
 	"github.com/CaliLuke/libopenapi/utils"
+	"github.com/pb33f/go-yaml"
 )
 
 // FindSchemaIdInNode looks for a $id key in a mapping node and returns its value.
@@ -280,6 +280,10 @@ func navigateToFragment(root *yaml.Node, fragment string) *yaml.Node {
 		segment = strings.ReplaceAll(segment, "~1", "/")
 		segment = strings.ReplaceAll(segment, "~0", "~")
 
+		current = utils.ResolveMergeNodes(current)
+		if current == nil {
+			return nil
+		}
 		found := false
 		if current.Kind == yaml.MappingNode {
 			for i := 0; i < len(current.Content)-1; i += 2 {
@@ -308,5 +312,5 @@ func navigateToFragment(root *yaml.Node, fragment string) *yaml.Node {
 		}
 	}
 
-	return current
+	return utils.ResolveMergeNodes(current)
 }

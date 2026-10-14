@@ -11,13 +11,13 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/pb33f/go-yaml"
 	"github.com/CaliLuke/libopenapi/datamodel"
 	"github.com/CaliLuke/libopenapi/datamodel/low"
 	"github.com/CaliLuke/libopenapi/datamodel/low/base"
 	"github.com/CaliLuke/libopenapi/index"
 	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/CaliLuke/libopenapi/utils"
+	"github.com/pb33f/go-yaml"
 )
 
 // Components represents a low-level OpenAPI 3+ Components Object, that is backed by a low-level one.
@@ -278,6 +278,7 @@ func (co *Components) Build(ctx context.Context, root *yaml.Node, idx *index.Spe
 func extractComponentValues[T low.Buildable[N], N any](ctx context.Context, label string, root *yaml.Node, idx *index.SpecIndex, co *Components) (low.NodeReference[*orderedmap.Map[low.KeyReference[string], low.ValueReference[T]]], error) {
 	var emptyResult low.NodeReference[*orderedmap.Map[low.KeyReference[string], low.ValueReference[T]]]
 	_, nodeLabel, nodeValue := utils.FindKeyNodeFullTop(label, root.Content)
+	nodeValue = utils.ResolveMergeNodes(nodeValue)
 	if nodeValue == nil {
 		return emptyResult, nil
 	}
