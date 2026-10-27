@@ -18,13 +18,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	v3high "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/what-changed/model"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	v3high "github.com/pb33f/libopenapi/datamodel/high/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
-	"github.com/pb33f/libopenapi/what-changed/model"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -1777,7 +1777,7 @@ func TestDocument_RecursiveSchemaHash(t *testing.T) {
 	assert.NotEmpty(t, hash)
 }
 
-// https://github.com/pb33f/libopenapi/issues/426
+// https://github.com/CaliLuke/libopenapi/issues/426
 func TestDocument_MinimumZero(t *testing.T) {
 	d := `openapi: "3.1"`
 
@@ -1923,7 +1923,7 @@ components:
 }
 
 // Test complete sibling ref transformation with full rendering support
-// https://github.com/pb33f/libopenapi/issues/90
+// https://github.com/CaliLuke/libopenapi/issues/90
 func TestDocument_SiblingRefTransformation_FullRender(t *testing.T) {
 	// openapi spec with sibling ref (title alongside $ref)
 	spec := `openapi: 3.1.0
@@ -2149,7 +2149,7 @@ components:
 func TestNewDocument_DefaultConfig_EnablesSiblingRefTransform(t *testing.T) {
 	// Verifies that NewDocument() (without explicit configuration) uses
 	// NewDocumentConfiguration() defaults, which enables TransformSiblingRefs.
-	// See: https://github.com/pb33f/libopenapi/issues/90
+	// See: https://github.com/CaliLuke/libopenapi/issues/90
 	spec := `openapi: 3.1.0
 info:
   title: Sibling Ref Default Config Test

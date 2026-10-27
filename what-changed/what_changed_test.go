@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi/datamodel"
-	v2 "github.com/pb33f/libopenapi/datamodel/low/v2"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/what-changed/model"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	v2 "github.com/CaliLuke/libopenapi/datamodel/low/v2"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/what-changed/model"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -48,7 +48,7 @@ func TestCompareSwaggerDocuments(t *testing.T) {
 
 // TestCacheCollisionSelfReference reproduces the cache collision bug with self-referencing schemas
 // This is the key pattern that triggers the QuickHash cache collision issue
-// see: https://github.com/pb33f/libopenapi/pull/441
+// see: https://github.com/CaliLuke/libopenapi/pull/441
 func TestCacheCollisionSelfReference(t *testing.T) {
 	// Original spec - TreeNode schema with basic properties
 	original := `{
@@ -315,7 +315,7 @@ func TestCheckExplodedFileCheck_IdenticalRefNames(t *testing.T) {
 
 }
 
-// https://github.com/pb33f/libopenapi/issues/662
+// https://github.com/CaliLuke/libopenapi/issues/662
 func TestCompareOpenAPIDocuments_UnrelatedCircularReference(t *testing.T) {
 	original := `openapi: 3.0.3
 info:
@@ -367,7 +367,7 @@ components:
 	assert.Equal(t, 1, changes.TotalBreakingChanges())
 }
 
-// https://github.com/pb33f/libopenapi/issues/662
+// https://github.com/CaliLuke/libopenapi/issues/662
 func TestCompareOpenAPIDocuments_CrossFileCircularReference(t *testing.T) {
 	load := func(dir string) *v3.Document {
 		spec, err := os.ReadFile(dir + "/root.yaml")

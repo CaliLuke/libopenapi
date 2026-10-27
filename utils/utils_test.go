@@ -911,7 +911,7 @@ func TestConvertComponentIdIntoFriendlyPathSearch_Slashes(t *testing.T) {
 	assert.Equal(t, "$.nice.rice.and.spice", path)
 }
 
-// https://github.com/pb33f/libopenapi/issues/112
+// https://github.com/CaliLuke/libopenapi/issues/112
 func TestConvertComponentIdIntoFriendlyPathSearch_BracketInName(t *testing.T) {
 	_, path := ConvertComponentIdIntoFriendlyPathSearch(`#/oo/missus/hows/your/fa[ther]`)
 	assert.Equal(t, "$.oo.missus['hows']['your']['fa[ther]']", path)
@@ -2128,7 +2128,7 @@ func TestConvertComponentIdIntoFriendlyPathSearch_ExtremeEdgeCases(t *testing.T)
 	}
 }
 
-// https://github.com/pb33f/libopenapi/issues/500
+// https://github.com/CaliLuke/libopenapi/issues/500
 // Test digit-starting property names require bracket notation in JSONPath
 func TestConvertComponentIdIntoFriendlyPathSearch_DigitStartingSegments(t *testing.T) {
 	// Root-level key starting with digit (like error codes)

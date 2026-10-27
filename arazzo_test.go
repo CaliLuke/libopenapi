@@ -15,9 +15,9 @@ import (
 	"testing"
 	"unsafe"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	lowArazzo "github.com/CaliLuke/libopenapi/datamodel/low/arazzo"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	lowArazzo "github.com/pb33f/libopenapi/datamodel/low/arazzo"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -32,7 +32,7 @@ type officialArazzoSchemaMetadata struct {
 	Bytes         int    `json:"bytes"`
 }
 
-//go:linkname arazzoLowBuildModelFieldCache github.com/pb33f/libopenapi/datamodel/low.buildModelFieldCache
+//go:linkname arazzoLowBuildModelFieldCache github.com/CaliLuke/libopenapi/datamodel/low.buildModelFieldCache
 var arazzoLowBuildModelFieldCache sync.Map
 
 // TestArazzoOfficialSchemaMetadataIsPinned records which official schema iterations

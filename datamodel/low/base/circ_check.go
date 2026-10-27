@@ -6,10 +6,10 @@ package base
 import (
 	"slices"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // CheckSchemaProxyForCircularRefs checks if the provided SchemaProxy has any circular references, extracted from

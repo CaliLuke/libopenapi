@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	modelgen "github.com/pb33f/libopenapi/generator/golang"
-	"github.com/pb33f/libopenapi/generator/sdk"
+	"github.com/CaliLuke/libopenapi"
+	modelgen "github.com/CaliLuke/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi/generator/sdk"
 )
 
 // generatePeopleMatch generates a client for a real-world vendor's

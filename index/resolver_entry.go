@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // ResolvingError represents an issue the resolver had trying to stitch the tree together.

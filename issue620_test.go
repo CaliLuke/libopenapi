@@ -6,7 +6,7 @@ package libopenapi
 import (
 	"testing"
 
-	"github.com/pb33f/libopenapi/what-changed/model"
+	"github.com/CaliLuke/libopenapi/what-changed/model"
 	"github.com/pb33f/testify/require"
 )
 

@@ -7,13 +7,13 @@ import (
 	"context"
 	"encoding/json"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	lowBase "github.com/CaliLuke/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	lowBase "github.com/pb33f/libopenapi/datamodel/low/base"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // buildLowExample builds a low-level Example from a resolved YAML node.

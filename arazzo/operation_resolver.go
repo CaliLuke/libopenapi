@@ -4,7 +4,7 @@
 package arazzo
 
 import (
-	v3high "github.com/pb33f/libopenapi/datamodel/high/v3"
+	v3high "github.com/CaliLuke/libopenapi/datamodel/high/v3"
 )
 
 // operationResolver maps source descriptions to attached OpenAPI documents

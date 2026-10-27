@@ -8,8 +8,8 @@ import (
 	"sync"
 	"testing"
 
+	libopenapi "github.com/CaliLuke/libopenapi"
 	"github.com/pb33f/go-yaml"
-	libopenapi "github.com/pb33f/libopenapi"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

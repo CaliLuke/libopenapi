@@ -10,7 +10,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 // resolveRelativeFilePath resolves a relative file reference against a base directory.

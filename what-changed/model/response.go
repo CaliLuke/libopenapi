@@ -6,12 +6,12 @@ package model
 import (
 	"reflect"
 
-	"github.com/pb33f/libopenapi/datamodel/low"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
 )
 
 import (
-	"github.com/pb33f/libopenapi/datamodel/low/v2"
+	"github.com/CaliLuke/libopenapi/datamodel/low/v2"
 )
 
 // ResponseChanges represents changes found between two Swagger or OpenAPI Response objects.

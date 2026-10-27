@@ -4,9 +4,9 @@ import (
 	"hash/maphash"
 	"sort"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // ServerVariable represents a low-level OpenAPI 3+ ServerVariable object.

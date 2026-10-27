@@ -20,13 +20,13 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	v3high "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	v3high "github.com/pb33f/libopenapi/datamodel/high/v3"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -2571,7 +2571,7 @@ components:
 // ============================================================================
 // BundleInlineRefs Configuration Tests
 // These tests verify the BundleInlineRefs flag functionality (Issue #511)
-// Issue #511: https://github.com/pb33f/libopenapi/issues/511
+// Issue #511: https://github.com/CaliLuke/libopenapi/issues/511
 // ============================================================================
 
 // TestBundleInlineRefs_Default_PreservesLocalRefs verifies the default behavior
@@ -2946,7 +2946,7 @@ components:
 // Previously, setting BundleInlineRefs: true had no effect because the flag
 // wasn't wired up to the bundler's SetBundlingMode() mechanism. These tests
 // verify the fix.
-// Issue #511: https://github.com/pb33f/libopenapi/issues/511
+// Issue #511: https://github.com/CaliLuke/libopenapi/issues/511
 
 // TestIssue511_BundleInlineRefs_WasNonFunctional verifies that Issue #511 is fixed.
 func TestIssue511_BundleInlineRefs_WasNonFunctional(t *testing.T) {

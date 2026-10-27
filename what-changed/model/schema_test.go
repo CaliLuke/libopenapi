@@ -13,16 +13,16 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
+	v2 "github.com/CaliLuke/libopenapi/datamodel/low/v2"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/datamodel/low/base"
-	v2 "github.com/pb33f/libopenapi/datamodel/low/v2"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
 	"github.com/pb33f/testify/assert"
 )
 
@@ -3366,7 +3366,7 @@ func TestCompareSchemas_Nil(t *testing.T) {
 	assert.Nil(t, CompareSchemas(nil, nil))
 }
 
-// Test for issue https://github.com/pb33f/libopenapi/issues/218
+// Test for issue https://github.com/CaliLuke/libopenapi/issues/218
 func TestCompareSchemas_PropertyRefChange_Identical(t *testing.T) {
 	// Clear hash cache to ensure deterministic results in concurrent test environments
 	low.ClearHashCache()
@@ -7423,7 +7423,7 @@ components:
 	assert.Equal(t, 1, changes.TotalBreakingChanges())
 }
 
-// https://github.com/pb33f/libopenapi/issues/662
+// https://github.com/CaliLuke/libopenapi/issues/662
 func TestCompareSchemas_RefToInline_UnrelatedCircularReference(t *testing.T) {
 	low.ClearHashCache()
 	left := `openapi: 3.0
@@ -7471,7 +7471,7 @@ components:
 	assert.Equal(t, "#/components/schemas/Pet", petChanges.Changes[0].OriginalObject)
 }
 
-// https://github.com/pb33f/libopenapi/issues/662
+// https://github.com/CaliLuke/libopenapi/issues/662
 func TestCheckSchemaProxyForCircularRefs_OnlyLoopMembers(t *testing.T) {
 	low.ClearHashCache()
 	spec := `openapi: 3.0

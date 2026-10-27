@@ -4,10 +4,10 @@
 package base
 
 import (
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	low "github.com/pb33f/libopenapi/datamodel/low/base"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // License is a high-level representation of a License object as defined by OpenAPI 2 and OpenAPI 3

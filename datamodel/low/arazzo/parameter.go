@@ -7,25 +7,25 @@ import (
 	"context"
 	"hash/maphash"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // Parameter represents a low-level Arazzo Parameter Object.
 // A parameter can be a full parameter definition or a Reusable Object with a $components reference.
 // https://spec.openapis.org/arazzo/v1.0.1#parameter-object
 type Parameter struct {
-	Name           low.NodeReference[string]
-	In             low.NodeReference[string]
-	Value          low.NodeReference[*yaml.Node]
-	ComponentRef   low.NodeReference[string]
-	Extensions     *orderedmap.Map[low.KeyReference[string], low.ValueReference[*yaml.Node]]
-	KeyNode        *yaml.Node
-	RootNode       *yaml.Node
-	index          *index.SpecIndex
-	context        context.Context
+	Name         low.NodeReference[string]
+	In           low.NodeReference[string]
+	Value        low.NodeReference[*yaml.Node]
+	ComponentRef low.NodeReference[string]
+	Extensions   *orderedmap.Map[low.KeyReference[string], low.ValueReference[*yaml.Node]]
+	KeyNode      *yaml.Node
+	RootNode     *yaml.Node
+	index        *index.SpecIndex
+	context      context.Context
 	*low.Reference
 	low.NodeMap
 }

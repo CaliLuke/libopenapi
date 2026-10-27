@@ -7,15 +7,15 @@ import (
 	"errors"
 	"sync"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	lowmodel "github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	lowmodel "github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/datamodel/low/base"
-	low "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // Components represents a high-level OpenAPI 3+ Components Object, that is backed by a low-level one.

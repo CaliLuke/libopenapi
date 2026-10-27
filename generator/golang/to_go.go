@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/generator/internal/gocomment"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/generator/internal/gocomment"
 )
 
 var formatSource = format.Source

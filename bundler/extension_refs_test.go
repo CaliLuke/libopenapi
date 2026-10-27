@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi/index"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/index"
 )
 
 // Tests for defensive nil checks and edge cases in extension_refs.go

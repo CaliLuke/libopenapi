@@ -4,10 +4,10 @@
 package overlay
 
 import (
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/overlay"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	low "github.com/pb33f/libopenapi/datamodel/low/overlay"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // Info represents a high-level Overlay Info Object.

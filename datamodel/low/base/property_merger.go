@@ -6,9 +6,9 @@ package base
 import (
 	"fmt"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // PropertyMerger handles merging of local properties with referenced schema properties

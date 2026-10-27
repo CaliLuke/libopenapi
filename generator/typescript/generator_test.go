@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/generator/golang"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 func TestFeaturesGolden(t *testing.T) {

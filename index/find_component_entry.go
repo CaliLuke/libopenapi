@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
 	"github.com/pb33f/jsonpath/pkg/jsonpath"
 	jsonpathconfig "github.com/pb33f/jsonpath/pkg/jsonpath/config"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // FindComponent locates a component in the index by reference.

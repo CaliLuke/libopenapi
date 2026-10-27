@@ -17,19 +17,19 @@ import (
 	"errors"
 	"fmt"
 
-	lowbase "github.com/pb33f/libopenapi/datamodel/low/base"
+	lowbase "github.com/CaliLuke/libopenapi/datamodel/low/base"
 
-	"github.com/pb33f/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/index"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	v2high "github.com/CaliLuke/libopenapi/datamodel/high/v2"
+	v3high "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	v2low "github.com/CaliLuke/libopenapi/datamodel/low/v2"
+	v3low "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/utils"
+	what_changed "github.com/CaliLuke/libopenapi/what-changed"
+	"github.com/CaliLuke/libopenapi/what-changed/model"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	v2high "github.com/pb33f/libopenapi/datamodel/high/v2"
-	v3high "github.com/pb33f/libopenapi/datamodel/high/v3"
-	v2low "github.com/pb33f/libopenapi/datamodel/low/v2"
-	v3low "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/utils"
-	what_changed "github.com/pb33f/libopenapi/what-changed"
-	"github.com/pb33f/libopenapi/what-changed/model"
 )
 
 // Document Represents an OpenAPI specification that can then be rendered into a model or serialized back into

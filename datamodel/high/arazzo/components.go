@@ -4,11 +4,11 @@
 package arazzo
 
 import (
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	lowmodel "github.com/CaliLuke/libopenapi/datamodel/low"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/arazzo"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	lowmodel "github.com/pb33f/libopenapi/datamodel/low"
-	low "github.com/pb33f/libopenapi/datamodel/low/arazzo"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // Components represents a high-level Arazzo Components Object.

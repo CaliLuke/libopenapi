@@ -15,11 +15,11 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi/arazzo/expression"
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
+	v3high "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/arazzo/expression"
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
-	v3high "github.com/pb33f/libopenapi/datamodel/high/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

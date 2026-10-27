@@ -6,8 +6,8 @@ package low
 import (
 	"strings"
 
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // navigateReferenceFragment navigates a local JSON Pointer fragment within a YAML node tree.

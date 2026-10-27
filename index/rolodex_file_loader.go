@@ -18,10 +18,10 @@ import (
 
 	"context"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/internal/jsonnode"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/internal/jsonnode"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 type Rolodexable interface {

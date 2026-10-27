@@ -14,9 +14,9 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/lucasjones/reggen"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 const (
@@ -219,7 +219,7 @@ func (wr *SchemaRenderer) renderSchemaWithBudgets(schema *base.Schema, enforceBu
 // DisableRequiredCheck disables required-property filtering when rendering a schema.
 //
 // When disabled, all properties are rendered, not just required properties.
-// https://github.com/pb33f/libopenapi/issues/200
+// https://github.com/CaliLuke/libopenapi/issues/200
 func (wr *SchemaRenderer) DisableRequiredCheck() {
 	wr.disableRequired = true
 }

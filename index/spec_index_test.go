@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 )
 
@@ -2688,7 +2688,7 @@ components:
 }
 
 // Tests for fix of issue #379: GetAllParametersFromOperations inconsistent parameter counting
-// https://github.com/pb33f/libopenapi/issues/379
+// https://github.com/CaliLuke/libopenapi/issues/379
 
 func TestSpecIndex_GetAllParametersFromOperations_ValidDifferentLocations(t *testing.T) {
 	// tests parameters with same name in different locations (valid per OpenAPI spec)

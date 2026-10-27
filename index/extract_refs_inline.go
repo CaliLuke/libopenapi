@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // buildDefinitionPath assembles absPath + "#/" + seenPath + extra segments joined by

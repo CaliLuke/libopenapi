@@ -6,8 +6,8 @@ package bundler
 import (
 	"strings"
 
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
 	"github.com/pb33f/go-yaml"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
 )
 
 // DetectOpenAPIComponentType attempts to determine what type of OpenAPI component a node represents.
@@ -155,7 +155,7 @@ func hasPathItemProperties(node *yaml.Node) bool {
 // keyword" — and is excluded from the result. When every key in the mapping shares the same
 // quote style, the style carries no such signal: most commonly this is a JSON-sourced
 // mapping where quoting is syntactic (JSON requires `"key":`). In that case every key is
-// returned. See https://github.com/pb33f/libopenapi/issues/562.
+// returned. See https://github.com/CaliLuke/libopenapi/issues/562.
 func getNodeKeys(node *yaml.Node) []string {
 	if node.Kind == yaml.DocumentNode && len(node.Content) > 0 {
 		node = node.Content[0]

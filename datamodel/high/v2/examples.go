@@ -4,10 +4,10 @@
 package v2
 
 import (
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	lowv2 "github.com/CaliLuke/libopenapi/datamodel/low/v2"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	lowv2 "github.com/pb33f/libopenapi/datamodel/low/v2"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // Example represents a high-level Swagger / OpenAPI 2 Example object, backed by a low level one.

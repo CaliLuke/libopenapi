@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"sort"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	lowbase "github.com/CaliLuke/libopenapi/datamodel/low"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	lowbase "github.com/pb33f/libopenapi/datamodel/low"
-	low "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // Responses represents a high-level OpenAPI 3+ Responses object that is backed by a low-level one.

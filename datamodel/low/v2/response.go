@@ -7,12 +7,12 @@ import (
 	"context"
 	"hash/maphash"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/datamodel/low/base"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // Response is a representation of a high-level Swagger / OpenAPI 2 Response object, backed by a low-level one.

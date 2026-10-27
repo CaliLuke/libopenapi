@@ -12,11 +12,11 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // SchemaProxy exists as a stub that will create a Schema once (and only once) the Schema() method is called.
@@ -245,7 +245,7 @@ func (sp *SchemaProxy) Schema() *Schema {
 			sp.buildError = err
 			return
 		}
-		schema.ParentProxy = sp // https://github.com/pb33f/libopenapi/issues/29
+		schema.ParentProxy = sp // https://github.com/CaliLuke/libopenapi/issues/29
 
 		// Store rendered FIRST — must happen before NodeMap copy.
 		// If AddNode() runs during the Range window, it sees rendered != nil

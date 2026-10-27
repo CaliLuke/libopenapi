@@ -6,13 +6,13 @@ package v3
 import (
 	"context"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	lowmodel "github.com/CaliLuke/libopenapi/datamodel/low"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	lowmodel "github.com/pb33f/libopenapi/datamodel/low"
-	low "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // buildLowSecurityScheme builds a low-level SecurityScheme from a resolved YAML node.

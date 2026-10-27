@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"log/slog"
 
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	lowArazzo "github.com/CaliLuke/libopenapi/datamodel/low/arazzo"
 	"github.com/pb33f/go-yaml"
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	lowArazzo "github.com/pb33f/libopenapi/datamodel/low/arazzo"
 )
 
 // ArazzoDocumentConfiguration supplies immutable parsing and origin context.

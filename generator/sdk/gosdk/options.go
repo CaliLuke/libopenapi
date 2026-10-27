@@ -4,8 +4,8 @@
 package gosdk
 
 import (
-	modelgen "github.com/pb33f/libopenapi/generator/golang"
-	"github.com/pb33f/libopenapi/generator/sdk"
+	modelgen "github.com/CaliLuke/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi/generator/sdk"
 )
 
 // Options configures Go SDK generation.

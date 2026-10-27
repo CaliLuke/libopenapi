@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"sort"
 
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/orderedmap"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // Generator holds immutable configuration for code generation. Each public

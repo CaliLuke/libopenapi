@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 func (g *Generator) recordSchemaMetadata(typeName string, schema *highbase.Schema) {

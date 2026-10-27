@@ -13,12 +13,12 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/datamodel/low/base"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // buildCacheKey builds a "path:line:col" string without fmt.Sprintf allocations.
@@ -447,7 +447,7 @@ func (sp *SchemaProxy) GetValueNode() *yaml.Node {
 // It's important to note that this method will return nil on a pointer created using NewSchemaProxy or CreateSchema* methods
 // there is no low-level SchemaProxy backing it, and therefore no schema to build, so this will fail. Use BuildSchema
 // instead for proxies created using NewSchemaProxy or CreateSchema* methods.
-// https://github.com/pb33f/libopenapi/issues/403
+// https://github.com/CaliLuke/libopenapi/issues/403
 func (sp *SchemaProxy) Schema() *Schema {
 	if sp == nil {
 		return nil

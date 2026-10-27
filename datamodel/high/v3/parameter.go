@@ -6,14 +6,14 @@ package v3
 import (
 	"context"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	lowmodel "github.com/CaliLuke/libopenapi/datamodel/low"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	lowmodel "github.com/pb33f/libopenapi/datamodel/low"
-	low "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // buildLowParameter builds a low-level Parameter from a resolved YAML node.

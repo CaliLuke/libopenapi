@@ -11,11 +11,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/datamodel"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 type MetadataTaggedModel struct {

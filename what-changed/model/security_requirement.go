@@ -4,10 +4,10 @@
 package model
 
 import (
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/datamodel/low/base"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // SecurityRequirementChanges represents changes found between two SecurityRequirement Objects.

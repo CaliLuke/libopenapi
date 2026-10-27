@@ -6,8 +6,8 @@ package bundler
 import (
 	"testing"
 
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
 	"github.com/pb33f/go-yaml"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
 	"github.com/pb33f/testify/assert"
 )
 
@@ -663,7 +663,7 @@ type: object
 	assert.True(t, detected)
 }
 
-// TestDetectOpenAPIComponentType_JSONSourced covers https://github.com/pb33f/libopenapi/issues/562:
+// TestDetectOpenAPIComponentType_JSONSourced covers https://github.com/CaliLuke/libopenapi/issues/562:
 // SON-parsed mappings arrive with every key marked yaml.DoubleQuotedStyle.
 // Uniform quoting on a JSON-sourced mapping is syntactic — not a
 // user escape — and must not disable component-type detection.

@@ -11,11 +11,11 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/datamodel/low/base"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // SchemaChanges represent all changes to a base.Schema OpenAPI object. These changes are represented
@@ -457,7 +457,7 @@ func CompareSchemas(l, r *base.SchemaProxy) *SchemaChanges {
 		// changed from inline to ref
 		if !l.IsReference() && r.IsReference() {
 			// check if the referenced schema matches or not
-			// https://github.com/pb33f/libopenapi/issues/218
+			// https://github.com/CaliLuke/libopenapi/issues/218
 			lHash := l.Schema().Hash()
 			rHash := r.Schema().Hash()
 			if lHash != rHash {
@@ -477,7 +477,7 @@ func CompareSchemas(l, r *base.SchemaProxy) *SchemaChanges {
 		// changed from ref to inline
 		if l.IsReference() && !r.IsReference() {
 			// check if the referenced schema matches or not
-			// https://github.com/pb33f/libopenapi/issues/218
+			// https://github.com/CaliLuke/libopenapi/issues/218
 			lHash := l.Schema().Hash()
 			rHash := r.Schema().Hash()
 			if lHash != rHash {

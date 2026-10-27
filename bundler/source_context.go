@@ -6,8 +6,8 @@ package bundler
 import (
 	"strings"
 
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
 	"github.com/pb33f/go-yaml"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
 )
 
 // inferComponentTypeFromSourcePath returns the component bucket implied by the

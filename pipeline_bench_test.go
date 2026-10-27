@@ -11,10 +11,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/bundler"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/bundler"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
 )
 
 // Pipeline benchmarks exercise the full public entry points against large, real-world specifications.

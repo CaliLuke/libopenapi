@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/CaliLuke/libopenapi/arazzo/expression"
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
 	"github.com/pb33f/jsonpath/pkg/jsonpath"
 	jsonpathconfig "github.com/pb33f/jsonpath/pkg/jsonpath/config"
-	"github.com/pb33f/libopenapi/arazzo/expression"
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
 )
 
 type cachedCriterionRegex struct {

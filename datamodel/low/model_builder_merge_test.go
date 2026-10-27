@@ -3,9 +3,9 @@ package low
 import (
 	"testing"
 
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

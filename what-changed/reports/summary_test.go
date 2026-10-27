@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/what-changed/model"
+	"github.com/CaliLuke/libopenapi"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/what-changed/model"
 	"github.com/pb33f/testify/assert"
 )
 

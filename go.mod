@@ -1,4 +1,4 @@
-module github.com/pb33f/libopenapi
+module github.com/CaliLuke/libopenapi
 
 go 1.26.0
 

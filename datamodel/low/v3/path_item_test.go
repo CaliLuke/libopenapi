@@ -9,11 +9,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -104,7 +104,7 @@ func TestPathItem_Build_ScalarRoot(t *testing.T) {
 	assert.NotNil(t, n.GetKeyNode())
 }
 
-// https://github.com/pb33f/libopenapi/issues/388
+// https://github.com/CaliLuke/libopenapi/issues/388
 func TestPathItem_CheckExtensionWithParametersValue_NoPanic(t *testing.T) {
 	yml := `x-user_extension: parameters
 get:

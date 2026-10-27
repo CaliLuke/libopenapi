@@ -11,10 +11,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/orderedmap"
-	whatchanged "github.com/pb33f/libopenapi/what-changed/model"
+	"github.com/CaliLuke/libopenapi"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	whatchanged "github.com/CaliLuke/libopenapi/what-changed/model"
 )
 
 // TestTrainTravelComponentsRoundTrip codifies the bi-directional identity of the
@@ -165,7 +165,7 @@ import (
 	"os"
 	"strings"
 
-	gogenerator "github.com/pb33f/libopenapi/generator/golang"
+	gogenerator "github.com/CaliLuke/libopenapi/generator/golang"
 	"reflect"
 
 	"trainfullcircle/internal/trainmodels"

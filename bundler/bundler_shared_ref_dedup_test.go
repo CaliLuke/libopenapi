@@ -9,14 +9,14 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/datamodel"
 	yaml "github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/datamodel"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
 
-// https://github.com/pb33f/libopenapi/issues/644
+// https://github.com/CaliLuke/libopenapi/issues/644
 func TestBundleDocumentComposed_SharedSchemaFromAllOfAndProperty(t *testing.T) {
 	tmpDir := t.TempDir()
 	require.NoError(t, os.MkdirAll(filepath.Join(tmpDir, "schemas"), 0o755))

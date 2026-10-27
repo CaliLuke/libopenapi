@@ -6,8 +6,8 @@ package index
 import (
 	"fmt"
 
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 func cloneFoundComponentReference(index *SpecIndex, found *Reference, componentID, absoluteFilePath string) *Reference {

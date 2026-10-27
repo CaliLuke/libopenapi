@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 // PropertyMergeStrategy defines how conflicting properties are handled during reference resolution
@@ -42,7 +42,7 @@ type DocumentConfiguration struct {
 	// The remote handler is only used if AllowRemoteReferences is true. If AllowRemoteReferences is false, then
 	// the remote handler will not be used even when BaseURL is set.
 	//
-	// Resolves [#132]: https://github.com/pb33f/libopenapi/issues/132
+	// Resolves [#132]: https://github.com/CaliLuke/libopenapi/issues/132
 	RemoteURLHandler utils.RemoteURLHandler
 
 	// If resolving locally, the BasePath will be the root from which relative references will be resolved from.
@@ -180,7 +180,7 @@ type DocumentConfiguration struct {
 	// -- IMPORTANT --
 	///
 	// Enabling this (default is false) will stop changes from being detected if a schema is circular.
-	// As identified in https://github.com/pb33f/libopenapi/pull/441
+	// As identified in https://github.com/CaliLuke/libopenapi/pull/441
 	//
 	// In the edge case where you have circular references in your root / entry components/schemas and you also
 	// want changes in them to be picked up, then you should not enable this.

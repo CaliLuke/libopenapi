@@ -18,11 +18,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // GoesLow is used to represent any high-level model. All high level models meet this interface and can be used to
@@ -71,7 +71,7 @@ func RenderInlineWithContext(high, low, ctx any) (interface{}, error) {
 //
 // This feature will be upgraded at some point to hold a registry of types and extension mappings to make this
 // functionality available a little more automatically.
-// You can read more about the discussion here: https://github.com/pb33f/libopenapi/issues/8
+// You can read more about the discussion here: https://github.com/CaliLuke/libopenapi/issues/8
 //
 // `T` represents the Type you want to unpack into
 // `R` represents the LOW type of the object that contains the extensions (not the high)

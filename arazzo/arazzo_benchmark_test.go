@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	libopenapi "github.com/pb33f/libopenapi"
+	libopenapi "github.com/CaliLuke/libopenapi"
 )
 
 func largeArazzoDocument(stepCount, outputCount int) []byte {

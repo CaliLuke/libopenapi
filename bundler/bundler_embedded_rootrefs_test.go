@@ -3,9 +3,9 @@ package bundler
 import (
 	"testing"
 
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/bundler/test/specs/rootrefs"
-	"github.com/pb33f/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/bundler/test/specs/rootrefs"
+	"github.com/CaliLuke/libopenapi/datamodel"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

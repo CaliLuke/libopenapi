@@ -6,13 +6,13 @@ package v3
 import (
 	"errors"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	lowmodel "github.com/CaliLuke/libopenapi/datamodel/low"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	lowmodel "github.com/pb33f/libopenapi/datamodel/low"
-	low "github.com/pb33f/libopenapi/datamodel/low/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // MediaType represents a high-level OpenAPI MediaType object that is backed by a low-level one.

@@ -7,9 +7,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	lowoverlay "github.com/CaliLuke/libopenapi/datamodel/low/overlay"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	lowoverlay "github.com/pb33f/libopenapi/datamodel/low/overlay"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

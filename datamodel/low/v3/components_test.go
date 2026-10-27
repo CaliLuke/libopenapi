@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 )
 
@@ -536,7 +536,7 @@ func TestComponents_MediaTypes(t *testing.T) {
 
 // TestComponents_XPrefixedComponentNames tests that component names starting with x- are correctly
 // parsed as components and not incorrectly filtered out as extensions.
-// This is a regression test for https://github.com/pb33f/libopenapi/issues/503
+// This is a regression test for https://github.com/CaliLuke/libopenapi/issues/503
 func TestComponents_XPrefixedComponentNames(t *testing.T) {
 	low.ClearHashCache()
 

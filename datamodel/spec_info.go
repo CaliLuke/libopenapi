@@ -14,9 +14,9 @@ import (
 	"unicode/utf16"
 	"unicode/utf8"
 
+	"github.com/CaliLuke/libopenapi/internal/jsonnode"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/internal/jsonnode"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 const (

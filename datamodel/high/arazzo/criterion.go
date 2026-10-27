@@ -6,11 +6,11 @@ package arazzo
 import (
 	"context"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	lowmodel "github.com/CaliLuke/libopenapi/datamodel/low"
+	low "github.com/CaliLuke/libopenapi/datamodel/low/arazzo"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high"
-	lowmodel "github.com/pb33f/libopenapi/datamodel/low"
-	low "github.com/pb33f/libopenapi/datamodel/low/arazzo"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 // Criterion represents a high-level Arazzo Criterion Object.

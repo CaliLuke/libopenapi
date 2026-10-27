@@ -7,12 +7,12 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pb33f/libopenapi/datamodel"
-	v2 "github.com/pb33f/libopenapi/datamodel/high/v2"
-	v3 "github.com/pb33f/libopenapi/datamodel/high/v3"
-	lowoverlay "github.com/pb33f/libopenapi/datamodel/low/overlay"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/overlay"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	v2 "github.com/CaliLuke/libopenapi/datamodel/high/v2"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	lowoverlay "github.com/CaliLuke/libopenapi/datamodel/low/overlay"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/overlay"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

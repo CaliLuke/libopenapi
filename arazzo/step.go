@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/CaliLuke/libopenapi/arazzo/expression"
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/arazzo/expression"
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
 )
 
 func (e *Engine) executeStep(ctx context.Context, step *high.Step, wf *high.Workflow, exprCtx *expression.Context, state *executionState) *StepResult {

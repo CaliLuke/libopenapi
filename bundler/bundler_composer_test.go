@@ -14,13 +14,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/datamodel"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/datamodel"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	v3 "github.com/pb33f/libopenapi/datamodel/high/v3"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -3117,7 +3117,7 @@ func TestBundleComposed_DoubleBuildNoErrors(t *testing.T) {
 	assert.Contains(t, schemas, "Error")
 }
 
-// TestBundleBytesComposed_JSONSchemaTarget covers https://github.com/pb33f/libopenapi/issues/562:
+// TestBundleBytesComposed_JSONSchemaTarget covers https://github.com/CaliLuke/libopenapi/issues/562:
 // external $ref targets written as JSON (rather than YAML) must still be hoisted into
 // components.schemas rather than inlined at the ref site. JSON is a subset of YAML so every
 // key arrives as yaml.DoubleQuotedStyle; component-type detection must not treat that as an

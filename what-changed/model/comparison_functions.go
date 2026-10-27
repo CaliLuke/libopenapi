@@ -10,13 +10,13 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pb33f/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
 
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
 )
 
 const (
@@ -732,7 +732,7 @@ func checkMapForChangesInternal[T any, R any](expLeft, expRight *orderedmap.Map[
 			chLock.Lock()
 			ch := compareFunc(p[k].Value, h[k].Value)
 			// incorrect map results were being generated causing panics.
-			// https://github.com/pb33f/libopenapi/issues/61
+			// https://github.com/CaliLuke/libopenapi/issues/61
 			if !reflect.ValueOf(&ch).Elem().IsZero() {
 				expChanges[k] = ch
 				var cr any = ch

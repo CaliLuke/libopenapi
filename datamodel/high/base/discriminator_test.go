@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
+	lowmodel "github.com/CaliLuke/libopenapi/datamodel/low"
+	lowbase "github.com/CaliLuke/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	lowmodel "github.com/pb33f/libopenapi/datamodel/low"
-	lowbase "github.com/pb33f/libopenapi/datamodel/low/base"
-	"github.com/pb33f/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

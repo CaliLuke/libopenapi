@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"slices"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/orderedmap"
 )
 
 const mockSchemaCacheRoleDefault = "schema"

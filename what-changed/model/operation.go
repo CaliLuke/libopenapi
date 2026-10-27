@@ -8,11 +8,11 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
+	v2 "github.com/CaliLuke/libopenapi/datamodel/low/v2"
+	v3 "github.com/CaliLuke/libopenapi/datamodel/low/v3"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/datamodel/low/base"
-	v2 "github.com/pb33f/libopenapi/datamodel/low/v2"
-	v3 "github.com/pb33f/libopenapi/datamodel/low/v3"
 )
 
 // OperationChanges represent changes made between two Swagger or OpenAPI Operation objects.

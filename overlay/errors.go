@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	highoverlay "github.com/pb33f/libopenapi/datamodel/high/overlay"
+	highoverlay "github.com/CaliLuke/libopenapi/datamodel/high/overlay"
 )
 
 // Warning represents a non-fatal issue encountered during overlay application.

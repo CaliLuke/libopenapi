@@ -9,7 +9,7 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )

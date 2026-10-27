@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"strings"
 
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	highv3 "github.com/pb33f/libopenapi/datamodel/high/v3"
-	"github.com/pb33f/libopenapi/orderedmap"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	highv3 "github.com/CaliLuke/libopenapi/datamodel/high/v3"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // Prepare builds the effective operation contract consumed by language emitters.

@@ -4,7 +4,7 @@
 package model
 
 import (
-	"github.com/pb33f/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
 )
 
 // DiscriminatorChanges represents changes made to a Discriminator OpenAPI object

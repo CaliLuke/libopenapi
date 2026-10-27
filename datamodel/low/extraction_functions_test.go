@@ -18,9 +18,9 @@ import (
 
 	"github.com/pb33f/go-yaml"
 
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -3503,7 +3503,7 @@ func (r *reusedHashable) Hash() uint64 {
 	return r.value
 }
 
-// https://github.com/pb33f/libopenapi/issues/615
+// https://github.com/CaliLuke/libopenapi/issues/615
 // Once an object is reclaimed its address is reused; the object allocated there must get its own hash, not the
 // memoized hash of the object that lived there before.
 func TestGenerateHashString_ReusedAddressGetsFreshHash(t *testing.T) {

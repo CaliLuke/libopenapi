@@ -14,11 +14,11 @@ import (
 	"sync"
 	"unicode"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high/nodes"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high/nodes"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // NodeBuilder is a structure used by libopenapi high-level objects, to render themselves back to YAML.

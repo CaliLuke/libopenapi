@@ -4,12 +4,12 @@
 package libopenapi
 
 import (
-	"github.com/pb33f/libopenapi/datamodel/high"
-	highbase "github.com/pb33f/libopenapi/datamodel/high/base"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	lowbase "github.com/pb33f/libopenapi/datamodel/low/base"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/utils"
+	"github.com/CaliLuke/libopenapi/datamodel/high"
+	highbase "github.com/CaliLuke/libopenapi/datamodel/high/base"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	lowbase "github.com/CaliLuke/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/utils"
 )
 
 // ClearAllCaches resets every global in-process cache in libopenapi.

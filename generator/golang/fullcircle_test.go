@@ -66,7 +66,7 @@ func repoRootDir(t *testing.T) string {
 
 func writeTempModule(t *testing.T, dir, repoRoot string) {
 	t.Helper()
-	writeTempFile(t, filepath.Join(dir, "go.mod"), []byte("module trainfullcircle\n\ngo 1.25.0\n\nrequire github.com/pb33f/libopenapi v0.0.0\n\nreplace github.com/pb33f/libopenapi => "+repoRoot+"\n"))
+	writeTempFile(t, filepath.Join(dir, "go.mod"), []byte("module trainfullcircle\n\ngo 1.25.0\n\nrequire github.com/CaliLuke/libopenapi v0.0.0\n\nreplace github.com/CaliLuke/libopenapi => "+repoRoot+"\n"))
 	sum, err := os.ReadFile(filepath.Join(repoRoot, "go.sum"))
 	if err != nil {
 		t.Fatal(err)
@@ -93,10 +93,10 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/datamodel/high/base"
-	gogenerator "github.com/pb33f/libopenapi/generator/golang"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/datamodel/high/base"
+	gogenerator "github.com/CaliLuke/libopenapi/generator/golang"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 	"github.com/pb33f/go-yaml"
 
 	"trainfullcircle/internal/trainmodels"

@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi"
+	"github.com/CaliLuke/libopenapi/datamodel"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi"
-	"github.com/pb33f/libopenapi/datamodel"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
@@ -64,7 +64,7 @@ func issue607Node(t *testing.T, src string) *yaml.Node {
 	return doc.Content[0]
 }
 
-// https://github.com/pb33f/libopenapi/issues/607
+// https://github.com/CaliLuke/libopenapi/issues/607
 func TestBundleBytesComposed_Issue607_SequenceRefDoesNotPanic(t *testing.T) {
 	for _, count := range []int{1, 2, 3, 63, 64, 65} {
 		t.Run(fmt.Sprintf("%d tags", count), func(t *testing.T) {

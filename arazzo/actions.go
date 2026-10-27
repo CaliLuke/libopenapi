@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pb33f/libopenapi/arazzo/expression"
-	high "github.com/pb33f/libopenapi/datamodel/high/arazzo"
-	"github.com/pb33f/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/arazzo/expression"
+	high "github.com/CaliLuke/libopenapi/datamodel/high/arazzo"
+	"github.com/CaliLuke/libopenapi/orderedmap"
 )
 
 // actionTypeRequest groups the parameters for processActionTypeResult,
@@ -102,16 +102,16 @@ func (e *Engine) processActionTypeResult(
 		result.endWorkflow = true
 	case "goto":
 		if req.workflowId != "" {
-				wfResult, runErr := e.runWorkflow(ctx, req.workflowId, nil, state)
-				if runErr != nil {
-					return nil, runErr
-				}
-				exprCtx.Workflows = copyWorkflowContexts(state.workflowContexts)
-				if wfResult != nil && !wfResult.Success {
-					return nil, workflowFailureError(req.workflowId, wfResult)
-				}
-				result.endWorkflow = true
-				return result, nil
+			wfResult, runErr := e.runWorkflow(ctx, req.workflowId, nil, state)
+			if runErr != nil {
+				return nil, runErr
+			}
+			exprCtx.Workflows = copyWorkflowContexts(state.workflowContexts)
+			if wfResult != nil && !wfResult.Success {
+				return nil, workflowFailureError(req.workflowId, wfResult)
+			}
+			result.endWorkflow = true
+			return result, nil
 		}
 		if req.stepId != "" {
 			idx, ok := stepIndexByID[req.stepId]

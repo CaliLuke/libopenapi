@@ -7,10 +7,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	lowV2 "github.com/CaliLuke/libopenapi/datamodel/low/v2"
+	"github.com/CaliLuke/libopenapi/index"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	lowV2 "github.com/pb33f/libopenapi/datamodel/low/v2"
-	"github.com/pb33f/libopenapi/index"
 	"github.com/pb33f/testify/assert"
 )
 
@@ -26,7 +26,7 @@ func buildHeader(t *testing.T, yml string) *Header {
 	return NewHeader(&n)
 }
 
-// https://github.com/pb33f/libopenapi/issues/630
+// https://github.com/CaliLuke/libopenapi/issues/630
 func TestNewHeader_AllFields(t *testing.T) {
 	yml := `type: integer
 format: int64

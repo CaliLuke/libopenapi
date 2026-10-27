@@ -8,12 +8,12 @@ import (
 	"hash/maphash"
 	"sort"
 
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/datamodel/low/base"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/datamodel/low/base"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // Operation is a low-level representation of an OpenAPI 3+ Operation object.
@@ -178,7 +178,7 @@ func (o *Operation) Build(ctx context.Context, keyNode, root *yaml.Node, idx *in
 	}
 
 	// if security is set, but no requirements are defined.
-	// https://github.com/pb33f/libopenapi/issues/111
+	// https://github.com/CaliLuke/libopenapi/issues/111
 	if sln != nil && len(svn.Content) == 0 && len(sec) == 0 {
 		o.Security = low.NodeReference[[]low.ValueReference[*base.SecurityRequirement]]{
 			Value:     []low.ValueReference[*base.SecurityRequirement]{},

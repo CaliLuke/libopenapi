@@ -14,9 +14,9 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/CaliLuke/libopenapi/internal/weakcache"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/internal/weakcache"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 func (index *SpecIndex) extractDefinitionsAndSchemas(schemasNode *yaml.Node, pathPrefix string) {
@@ -512,7 +512,7 @@ func (index *SpecIndex) scanOperationParams(params []*yaml.Node, keyNode, pathIt
 			}
 
 			// Fix for issue #379: Ensure consistent parameter counting regardless of ordering
-			// https://github.com/pb33f/libopenapi/issues/379
+			// https://github.com/CaliLuke/libopenapi/issues/379
 			// check if this parameter name already exists, and detect duplicates in the same location
 			if len(index.paramOpRefs[pathItemNode.Value][method][ref.Name]) > 0 {
 

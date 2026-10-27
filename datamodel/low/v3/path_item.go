@@ -12,12 +12,12 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/CaliLuke/libopenapi/datamodel"
+	"github.com/CaliLuke/libopenapi/datamodel/low"
+	"github.com/CaliLuke/libopenapi/index"
+	"github.com/CaliLuke/libopenapi/orderedmap"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel"
-	"github.com/pb33f/libopenapi/datamodel/low"
-	"github.com/pb33f/libopenapi/index"
-	"github.com/pb33f/libopenapi/orderedmap"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 // PathItem represents a low-level OpenAPI 3+ PathItem object.
@@ -272,7 +272,7 @@ func (p *PathItem) Build(ctx context.Context, keyNode, root *yaml.Node, idx *ind
 			prevExt = true
 			continue
 		}
-		// https://github.com/pb33f/libopenapi/issues/388
+		// https://github.com/CaliLuke/libopenapi/issues/388
 		// in the case where a user has an extension with the value 'parameters', make sure we handle
 		// it correctly, by not skipping.
 		if strings.EqualFold(pathNode.Value, "parameters") {

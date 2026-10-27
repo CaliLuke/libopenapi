@@ -10,13 +10,13 @@ import (
 	"testing"
 	"unsafe"
 
+	"github.com/CaliLuke/libopenapi/index"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/index"
 	"github.com/pb33f/testify/assert"
 	"github.com/pb33f/testify/require"
 )
 
-//go:linkname v3LowBuildModelFieldCache github.com/pb33f/libopenapi/datamodel/low.buildModelFieldCache
+//go:linkname v3LowBuildModelFieldCache github.com/CaliLuke/libopenapi/datamodel/low.buildModelFieldCache
 var v3LowBuildModelFieldCache sync.Map
 
 // forceOperationBuildModelError swaps the cached field layout low.BuildModel uses for Operation with a

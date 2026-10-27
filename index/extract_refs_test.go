@@ -53,7 +53,7 @@ func TestSpecIndex_ExtractRefs_CheckSummarySummary(t *testing.T) {
 	assert.Equal(t, 3, idx.summaryCount)
 }
 
-// https://github.com/pb33f/libopenapi/issues/457
+// https://github.com/CaliLuke/libopenapi/issues/457
 func TestSpecIndex_ExtractRefs_SkipSummaryInSchemaProperties(t *testing.T) {
 	// Test case for issue #457
 	// When a schema has a property named "summary", it should NOT be extracted as a summary description
@@ -133,7 +133,7 @@ components:
 	assert.Contains(t, descriptionContents, "A task object", "Should contain schema description")
 }
 
-// https://github.com/pb33f/libopenapi/issues/457
+// https://github.com/CaliLuke/libopenapi/issues/457
 func TestSpecIndex_ExtractRefs_SkipDescriptionInSchemaProperties(t *testing.T) {
 	// Test that description properties in schemas are not extracted as API descriptions
 	yml := `openapi: 3.1.0
@@ -189,7 +189,7 @@ paths:
 	}
 }
 
-// https://github.com/pb33f/libopenapi/issues/457
+// https://github.com/CaliLuke/libopenapi/issues/457
 func TestSpecIndex_ExtractRefs_Issue457_SummaryPropertyConfusion(t *testing.T) {
 	// Direct test for GitHub issue #457
 	// Schema properties named "summary" should not be confused with API summary fields
@@ -274,7 +274,7 @@ components:
 	assert.Equal(t, 4, idx.descriptionCount, "Should have 4 descriptions total")
 }
 
-// https://github.com/pb33f/libopenapi/issues/457
+// https://github.com/CaliLuke/libopenapi/issues/457
 func TestSpecIndex_ExtractRefs_SkipSummaryInPatternProperties(t *testing.T) {
 	// Test that summary/description in patternProperties are also skipped
 	yml := `openapi: 3.1.0
@@ -391,7 +391,7 @@ components:
 	assert.Len(t, idx.allInlineSchemaObjectDefinitions, 7)
 }
 
-// https://github.com/pb33f/libopenapi/issues/112
+// https://github.com/CaliLuke/libopenapi/issues/112
 func TestSpecIndex_ExtractRefs_CheckReferencesWithBracketsInName(t *testing.T) {
 	yml := `openapi: 3.0.0
 components:

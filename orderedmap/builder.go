@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/CaliLuke/libopenapi/datamodel/high/nodes"
+	"github.com/CaliLuke/libopenapi/utils"
 	"github.com/pb33f/go-yaml"
-	"github.com/pb33f/libopenapi/datamodel/high/nodes"
-	"github.com/pb33f/libopenapi/utils"
 )
 
 type marshaler interface {
